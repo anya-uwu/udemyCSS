@@ -10,5 +10,74 @@ p {
     text-align: center;
     line-height: 2;
     font-family: Verdana, Arial, sans-serif;
+    color: black;
 }
 
+/* Selectors */
+
+/* universal selector */
+
+/* * {
+    color: pink;
+} */
+
+/* element selector */
+/* selects all of a certain element */
+/* can use commas to select more than one type of element */
+
+h3 {
+    color: palevioletred;
+}
+
+/* id selector */
+/* not used as much for styling */
+
+#fish {
+    color: darkred;
+}
+
+/* class selector */
+
+.small {
+    color: pink;
+    background-color: palevioletred;
+}
+
+/* descendant selector */
+/* selects all h3 elements inside sections */
+
+section h3 {
+    color: purple;
+}
+
+/* can also select descendants of classes */
+.small span {
+    color: red;
+}
+
+/* attribute selector */
+/* select all input elements where the type attribute is set to "text" */
+
+/* not the best example but you get the point */
+section[class="moreFish"] {
+    background-color: aquamarine;
+}
+
+/* pseudo classes */
+
+h2:hover {
+    background-color: blue;
+}
+
+/* pseudo elements */
+
+h2::first-letter {
+    color:green
+}
+
+p::selection {
+    background-color: green;
+}
+
+/* some elements do not inherit every property */
+/* some properties are not inherited */
